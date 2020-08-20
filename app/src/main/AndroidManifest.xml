@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.fyp">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="ZSS Store"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:replace="android:label">
+        <activity android:name=".cartbuynow"></activity>
+        <activity android:name=".LoginOrRegisterActivity" />
+        <activity android:name=".splachscreenActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".BuynowActivity" />
+        <activity android:name=".sendActivity" />
+        <activity android:name=".SettingActivity" />
+        <activity android:name=".OrderDetailActivity" />
+        <activity android:name=".MyOrdersActivity" />
+        <activity android:name=".ServerMainActivity" />
+        <activity android:name=".MyFamily" />
+        <activity android:name=".MyChoiceActivity" />
+        <activity android:name=".SearchActivity" />
+        <activity android:name=".SingleRecylerViewActivity" />
+        <activity android:name=".MyCart" />
+        <activity android:name=".MyDashboard" />
+        <activity android:name=".ItemDetailActivity" />
+        <activity android:name=".MultiRecyclerViewActivity" />
+        <activity android:name=".extraActivity" />
+        <activity android:name=".FavActivity" />
+        <activity android:name=".LoginActivity" />
+        <activity android:name=".Main2Activity"></activity>
+        <activity android:name=".MainActivity" />
+        <activity android:name=".RegisterActivity" />
+
+        <service android:name=".MyNotificationService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+    </application>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <uses-permission android:name="android.permission.SEND_SMS" />
+
+</manifest>

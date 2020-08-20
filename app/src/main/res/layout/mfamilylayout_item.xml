@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="200dp"
+    android:layout_height="210dp"
+    app:cardElevation="8dp"
+    android:clipToPadding="false"
+    app:cardPreventCornerOverlap="true"
+    app:cardCornerRadius="4dp"
+    android:layout_margin="5dp"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+       android:layout_height="match_parent"
+        android:layout_gravity="start|top"
+        android:gravity="top|start"
+        android:background="?android:selectableItemBackground"
+        android:orientation="vertical">
+        <ImageView
+            android:layout_height="180dp"
+            android:layout_width="fill_parent"
+            android:id="@+id/item_image"
+            android:layout_gravity="start|top"
+            android:scaleType="centerCrop"
+            android:src="@mipmap/ic_launcher"
+        />
+        <LinearLayout
+            android:background="@drawable/toolbar_shadow"
+            android:paddingLeft="3dp"
+            android:paddingRight="3dp"
+            android:paddingTop="1dp"
+            android:paddingBottom="1dp"
+            android:weightSum="3"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+android:orientation="horizontal">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_weight="2.5"
+    android:layout_marginLeft="4dp"
+    android:layout_gravity="left"
+    android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/price"
+                android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
+               android:layout_gravity="left|start"
+                android:gravity="left|start"
+                android:textSize="11sp"
+                android:text="Price"
+                android:textColor="#FF1744"
+/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvTitle"
+        android:layout_gravity="left"
+        android:gravity="left"
+        android:textColor="@color/black"
+        android:textSize="12dp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+        android:text="Sample text"
+        />
+</LinearLayout>
+
+            <ImageView
+                android:id="@+id/fav"
+                android:layout_width="36dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end|right"
+                android:layout_marginRight="2dp"
+                android:layout_weight="0.5"
+                android:src="@drawable/nfav"
+
+                android:backgroundTintMode="src_atop"
+                android:tint="@color/black" />
+        </LinearLayout>
+
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

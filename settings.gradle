@@ -1,0 +1,2 @@
+rootProject.name='FYP'
+include ':app'

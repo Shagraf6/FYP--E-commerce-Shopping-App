@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    app:cardElevation="8dp"
+    app:cardCornerRadius="12dp"
+    android:layout_margin="10dp"
+    app:cardUseCompatPadding="true"
+
+    android:scrollbars="horizontal"
+    android:layout_height="wrap_content">
+<androidx.core.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="fill_horizontal"
+>
+    <LinearLayout
+    android:layout_width="match_parent"
+
+        android:layout_height="match_parent"
+    android:padding="10dp"
+    android:orientation="vertical">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    ><LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:textColor="@color/black"
+            android:layout_height="wrap_content"
+            android:id="@+id/orderAddress"
+            android:layout_margin="2dp"
+            android:layout_weight="10"
+            android:text="house# 2265,unit # 12,Latifabad,hyderabad."
+            ></TextView>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="end"
+            android:id="@+id/orderstatus"
+            android:layout_weight="90"
+            android:text="Placed"
+            android:textColor="#1B5E20"></TextView>
+    </LinearLayout>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="2dp"
+        android:id="@+id/orderPhoneNo"
+        android:text="+92308955809"
+        ></TextView>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="2dp"
+        android:layout_weight="40"
+        android:id="@+id/orderTime"
+        android:text="10/03/2020 12:50"
+        ></TextView>
+
+    <LinearLayout
+        android:layout_gravity="bottom"
+        android:gravity="bottom"
+        android:layout_width="match_parent"
+  android:background="@color/cardview_light_background"
+        android:layout_height="wrap_content"
+android:orientation="horizontal">
+        <TextView
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Total Amount :"
+            ></TextView>
+        <TextView
+            android:textStyle="bold"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:textColor="#D50000"
+            android:layout_height="wrap_content"
+            android:id="@+id/orderTotalAmount"
+            android:text="Rs. 999.9 /-"
+            ></TextView>
+        <TextView
+            android:textStyle="bold"
+            android:layout_weight="1"
+android:gravity="end"
+            android:layout_width="wrap_content"
+            android:textColor="@color/colorAccent"
+            android:layout_height="wrap_content"
+            android:id="@+id/orderDetails"
+            android:layout_gravity="right|end"
+            android:text="Order Details ->"
+            android:layout_marginRight="5dp"
+            ></TextView>
+    </LinearLayout>
+</LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        >
+        <Button
+            android:textColor="@color/black"
+            android:layout_margin="5dp"
+            android:padding="2dp"
+            android:background="@color/white"
+            android:layout_weight="1"
+            app:cornerRadius="30dp"
+            android:id="@+id/cancelorder"
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:text="Cancel Order"/>
+        <Button
+            android:layout_weight="1"
+            android:layout_margin="5dp"
+            android:elevation="10dp"
+            android:id="@+id/reorder"
+            android:visibility="visible"
+            android:background="@drawable/button"
+            android:layout_width="match_parent"
+            android:textColor="@color/white"
+            android:layout_height="20dp"
+            android:text="Reorder"/>
+    </LinearLayout>
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>
+</androidx.cardview.widget.CardView>

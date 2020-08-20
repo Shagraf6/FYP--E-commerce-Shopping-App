@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/frameLayout"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:theme="@style/Theme.AppCompat.Light"
+    android:layout_width="match_parent"
+    android:fitsSystemWindows="true"
+    android:layout_height="match_parent"
+    tools:context=".MyCart">
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fitsSystemWindows="true"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        android:background="@color/colorAccent"
+        android:id="@+id/app_bar"
+        >
+        <androidx.appcompat.widget.Toolbar
+            app:titleTextColor="@color/white"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:id="@+id/toolbar2"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light"     app:title="My Cart"
+            android:textAlignment="center"
+            app:titleMarginStart="30dp"
+            android:gravity="center_horizontal"
+            android:elevation="6dp"
+            android:minHeight="?actionBarSize"
+            />
+    </com.google.android.material.appbar.AppBarLayout>
+    <FrameLayout
+        android:layout_marginTop="?attr/actionBarSize"
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+       >
+<LinearLayout
+    android:layout_width="match_parent"
+    android:id="@+id/tv"
+    android:visibility="invisible"
+    android:layout_gravity="center"
+    android:layout_height="wrap_content"
+        android:orientation="vertical">
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/animationView"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        app:lottie_autoPlay="true"
+        android:layout_gravity="center"
+        app:lottie_rawRes="@raw/emptycartt"
+        app:lottie_loop="true" />
+    <TextView
+    android:layout_margin="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+android:text="No Items"
+        android:visibility="visible"
+        android:gravity="center"
+        android:textColor="@color/black"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Shop Now"
+        android:onClick="onclickW"
+        android:textColor="@color/white"
+        android:padding="10dp"
+        android:background="@drawable/button2"/>
+</LinearLayout>
+        <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:id="@+id/Cartrecyclerview_id"
+        />
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:elevation="100dp"
+android:layout_gravity="bottom"
+        android:layout_marginBottom="5dp"
+        app:cardElevation="80dp"
+        app:cardBackgroundColor="@color/white"
+        android:id="@+id/bottomSheet"
+        android:layout_margin="10dp"
+        android:layout_alignParentBottom="true"
+        >
+      <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_alignParentBottom="true"
+          android:layout_height="wrap_content"
+          android:orientation="vertical">
+      <LinearLayout
+          android:layout_marginLeft="10dp"
+          android:layout_marginRight="10dp"
+          android:layout_gravity="top"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:orientation="horizontal">
+  <TextView
+      android:gravity="top"
+      android:textSize="18dp"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_weight="1"
+      android:textColor="@color/black"
+      android:text="Total :"
+      />
+          <TextView
+        android:layout_weight="1"
+          android:elevation="80dp"
+          android:layout_width="match_parent"
+          android:textAlignment="gravity"
+
+              android:textSize="18dp"
+              android:text="Rs. 65/-"
+          android:textColor="#FF1744"
+          android:layout_height="wrap_content"
+          android:id="@+id/totalprice"
+          android:gravity="right|top" />
+      </LinearLayout>
+          <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+android:layout_margin="10dp"        android:id="@+id/orderid"
+        android:onClick="buyNow"
+        android:background="@drawable/button"
+        android:elevation="50dp"
+        android:text="Place Your Order"></Button>
+  </LinearLayout>
+</androidx.cardview.widget.CardView>
+
+    </FrameLayout>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView android:elevation="40dp"
+    app:cardElevation="20dp"
+    app:cardPreventCornerOverlap="true"
+    app:cardCornerRadius="10dp"
+    android:id="@+id/categorylayout"
+    android:layout_gravity="center"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="150dp"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+<LinearLayout
+    android:layout_width="match_parent"
+ android:layout_gravity="center"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+    <FrameLayout
+        android:id="@+id/Fcolor1"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+android:layout_marginTop="2dp"        android:layout_height="wrap_content"
+        android:padding="2dp"
+        android:background="@drawable/border2" >
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:foreground="?android:attr/selectableItemBackground"
+            android:clickable="true"
+            app:civ_border_color="#ABABAB"
+            app:civ_border_width="2dp"
+            android:layout_width="36dp"
+            android:cropToPadding="true"
+            android:scaleType="centerCrop"
+            android:layout_height="36dp"
+            android:layout_gravity="center"
+            android:id="@+id/CategoryImg"
+            android:src="@drawable/barbie"            />
+    </FrameLayout>
+    <TextView
+        android:layout_marginTop="2dp"
+        android:layout_width="match_parent"
+        android:textColor="@color/white"
+        android:layout_gravity="center"
+        android:background="@drawable/nav_bar_style"
+        android:text="category"
+        android:gravity="center"
+        android:layout_height="wrap_content"
+        android:id="@+id/CategoryTitle"></TextView>
+</LinearLayout>
+
+</androidx.cardview.widget.CardView>

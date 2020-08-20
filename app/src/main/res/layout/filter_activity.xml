@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:theme="@style/Theme.MaterialComponents.DayNight.Dialog.Alert"
+    android:layout_height="wrap_content">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+        <androidx.recyclerview.widget.RecyclerView
+    android:layout_width="match_parent"
+
+ android:foregroundGravity="center"
+            android:layout_height="wrap_content"
+    android:layout_marginTop="10dp"
+    android:id="@+id/filter_rv"
+    />
+        <Button
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="4dp"
+            android:layout_marginRight="4dp"
+            android:background="@drawable/button"
+            android:textColor="@color/white"
+            android:elevation="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/fiterdone_btn"
+            android:text="Reset"/>
+</LinearLayout>
+   </RelativeLayout>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:id="@+id/abc2"
+        android:layout_height="match_parent"
+        >
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:id="@+id/toolbar2"
+        app:title="My Cart"
+        android:textAlignment="center"
+        app:titleMarginStart="30dp"
+        android:gravity="center_horizontal"
+        android:elevation="6dp"
+        android:minHeight="?actionBarSize"
+        app:theme="@style/MyappTheme"
+      />
+ </androidx.coordinatorlayout.widget.CoordinatorLayout>

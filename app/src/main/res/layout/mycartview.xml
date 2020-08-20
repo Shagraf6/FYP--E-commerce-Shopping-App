@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    android:elevation="40dp"
+    app:cardElevation="8dp"
+    app:cardCornerRadius="12dp"
+    app:cardUseCompatPadding="true"
+    android:layout_margin="10dp"
+    app:cardBackgroundColor="@color/white"
+    android:layout_width="match_parent"
+    android:layout_height="210dp"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+<LinearLayout
+    android:layout_margin="10dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+    <com.makeramen.roundedimageview.RoundedImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/productimg"
+        android:scaleType="centerCrop"
+        app:riv_corner_radius="8dp"
+        app:riv_border_color="@color/black"
+        android:src="@drawable/backd"
+        android:layout_weight="1"
+        />
+    <LinearLayout
+        android:layout_marginLeft="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="left|center"
+        android:layout_weight="1"
+        android:orientation="vertical">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right|top"
+            android:src="@drawable/clear"
+            android:id="@+id/del"
+            android:tint="#8A8181"></ImageView>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+        android:textColor="@color/black"
+                android:id="@+id/header"
+                android:text="Title"
+                android:gravity="left|center"
+                android:layout_marginTop="10dp"
+                android:paddingBottom="4dp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/color"
+            android:text="color:"
+            android:paddingBottom="2dp"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/Size"
+   android:text="size:"     />
+<LinearLayout
+    android:visibility="visible"
+    android:layout_marginTop="10dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:gravity="bottom"
+    android:layout_gravity="bottom|end"
+    >
+
+         <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/price"
+        android:layout_weight="1"
+        android:text="prize:"
+        android:layout_gravity="center"
+        android:gravity="left|center"
+        android:textColor="#D50000"
+        android:textAppearance="@style/TextAppearance.AppCompat.Subhead"/>
+    <com.cepheuen.elegantnumberbutton.view.ElegantNumberButton
+        android:id="@+id/number_counterr"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top"
+        android:gravity="right|top"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        app:backgroundDrawable="@color/transpaent"
+        app:finalNumber="5"
+        app:initialNumber="1"
+        app:textColor="@color/black" />
+
+</LinearLayout>
+    </LinearLayout>
+</LinearLayout>
+</androidx.cardview.widget.CardView>

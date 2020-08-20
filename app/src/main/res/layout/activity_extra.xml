@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:fitsSystemWindows="true"
+    android:theme="@style/Theme.AppCompat.Light"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".extraActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/htab_appbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorAccent"
+        android:fitsSystemWindows="true"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+<com.google.android.material.appbar.CollapsingToolbarLayout
+     android:id="@+id/htab_collapse_toolbar"
+    android:background="@color/colorAccent"
+android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+    app:contentScrim="@color/colorAccent"
+            android:fitsSystemWindows="true"
+         app:layout_scrollFlags="scroll|exitUntilCollapsed|snap"
+    app:titleEnabled="false">
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="bottom"
+        android:background="@drawable/scrim" />
+
+    <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbar2"
+    app:menu="@menu/searchtoolbar"
+                android:layout_height="?attr/actionBarSize"
+        android:background="@color/colorAccent"
+        android:layout_width="match_parent"
+        app:titleTextColor="@color/white"
+        android:scrollbarAlwaysDrawVerticalTrack="true"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:title="Category"
+                android:layout_marginBottom="48dp"
+    app:popupTheme="@style/ThemeOverlay.AppCompat.Light"/>
+<com.google.android.material.tabs.TabLayout
+    android:id="@+id/tablayout"
+    android:minHeight="?attr/actionBarSize"
+    android:theme="@style/ThemeOverlay.AppCompat.Light"
+    app:layout_collapseMode="pin"
+    android:layout_gravity="bottom"
+    app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+    android:background="@color/colorAccent"
+    android:layout_width="match_parent"
+    app:tabMode="fixed"
+    android:layout_height="wrap_content"
+                app:tabIndicatorColor="#D1FBF1"
+                app:tabSelectedTextColor="@color/white"
+                app:tabTextColor="@color/white"/>
+</com.google.android.material.appbar.CollapsingToolbarLayout>
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.viewpager.widget.ViewPager
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:id="@+id/pager">
+    </androidx.viewpager.widget.ViewPager>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

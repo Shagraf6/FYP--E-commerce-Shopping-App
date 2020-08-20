@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    tools:context=".BuynowActivity">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="COST and WORTH are very different things"
+        android:gravity="center"
+        android:textColor="#FF6F00"
+        android:background="#FBEDC2"
+        android:layout_marginTop="10dp"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:orientation="horizontal">
+            <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/animationView"
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:scaleType="centerCrop"
+            app:lottie_autoPlay="true"
+            android:layout_gravity="center"
+            app:lottie_rawRes="@raw/redcartbag"
+            app:lottie_loop="true" />
+        <TextView
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textColor="@color/black"
+            android:id="@+id/userinfo"
+
+            android:text="Adress : hoiuse#33 ,unit bb6,lat,hf\n Name: khhurl\n Phone no : 30440"
+            />
+
+    </LinearLayout>
+
+    <ImageView
+       android:src="@drawable/line"
+       android:layout_width="match_parent"
+       android:layout_height="2dp"
+       android:background="#77AEACAB"
+/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:text="Select Payment Method :"
+        android:textColor="#FF1744"/>
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:weightSum="2">
+        <RadioButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:id="@+id/radio1"
+            android:checked="false"
+            android:text="Credit Card"/>
+        <RadioButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:id="@+id/radio2"
+            android:checked="true"
+            android:text="Cash On Delivery"/>
+    </RadioGroup>
+</LinearLayout>

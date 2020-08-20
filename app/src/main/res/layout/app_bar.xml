@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+tools:context=".Main2Activity">
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/app_bar"
+        android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+      android:fitsSystemWindows="true"
+        android:background="@color/transpaent"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+<com.google.android.material.appbar.CollapsingToolbarLayout
+    android:id="@+id/collapsing_toolbar"
+    app:layout_scrollFlags="exitUntilCollapsed|scroll"
+    app:contentScrim="@color/colorAccent"
+    android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+    app:expandedTitleTextAppearance="@android:color/transparent"
+    android:layout_width="match_parent"
+    android:layout_height="350dp"
+    app:expandedTitleMarginStart="48dp"
+    app:expandedTitleMarginEnd="64dp"
+    android:fitsSystemWindows="true"
+    app:toolbarId="@id/toolbar7"
+    >
+
+   <FrameLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:id="@+id/ImageSlidr_container"
+       android:fitsSystemWindows="true"
+      >
+       <androidx.cardview.widget.CardView
+           android:id="@+id/cv_slider_mainActivity"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           >
+
+           <com.smarteist.autoimageslider.SliderView
+               android:id="@+id/imageSlider"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               app:sliderAutoCycleDirection="back_and_forth"
+               app:sliderIndicatorAnimationDuration="600"
+               app:sliderIndicatorGravity="center_horizontal|bottom"
+               app:sliderIndicatorMargin="15dp"
+               app:layout_collapseMode="parallax"
+               app:sliderIndicatorOrientation="horizontal"
+               app:sliderIndicatorPadding="2dp"
+               app:sliderIndicatorRadius="2dp"
+               app:sliderIndicatorSelectedColor="#5A5A5A"
+               app:sliderIndicatorUnselectedColor="#FFF"
+               app:sliderScrollTimeInSec="1"
+               app:sliderAnimationDuration="600"
+               app:sliderAutoCycleEnabled="true"
+               app:sliderStartAutoCycle="true"/>
+
+       </androidx.cardview.widget.CardView>
+
+   </FrameLayout>
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar7"
+        android:layout_height="?attr/actionBarSize"
+        app:menu="@menu/searchtoolbar"
+        app:titleTextColor="@color/transpaent"
+        android:layout_width="match_parent"
+        android:scrollbarAlwaysDrawVerticalTrack="true"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:layout_collapseMode="pin"
+         app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
+
+</com.google.android.material.appbar.CollapsingToolbarLayout>
+</com.google.android.material.appbar.AppBarLayout>
+
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        app:fabAlignmentMode="end"
+        app:fabCradleRoundedCornerRadius="50dp"
+        android:id="@+id/fab"
+        android:layout_marginRight="5dp"
+        android:src="@drawable/cart"
+        android:tint="@color/black"
+        android:visibility="invisible"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:tooltipText="xyz"
+        android:textDirection="firstStrongLtr"
+        android:textAlignment="viewEnd"
+        app:layout_anchor="@id/app_bar"
+        app:layout_anchorGravity="bottom|end|right"
+        android:gravity="end">
+    </com.google.android.material.floatingactionbutton.FloatingActionButton>
+    <include layout="@layout/content_main" />
+
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

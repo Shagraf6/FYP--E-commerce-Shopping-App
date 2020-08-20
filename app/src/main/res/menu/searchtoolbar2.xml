@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/Tsearch"
+        android:icon="@drawable/myysearch"
+        android:title="SSearch...."
+        android:iconTintMode="src_over"
+        android:iconTint="@color/white"
+        app:showAsAction="always" />
+
+</menu>
